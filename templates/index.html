@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Welcome to First Flask!</h1>
-    <a href="/about">About</a>
-    <h2>Masukkan Nama : </h2>
+    <h1>Welcome to the jungle !</h1>
+    <a href="/about">About you </a>
+    <h2>Masukkan identitas : </h2>
     <form action="/submit" method="POST">
-        <input type="text" name="name" placeholder="Enter your name">
+        <input type="text" name="name" placeholder="Nama">
+        <input type="number" name="age" placeholder="Umur">
+        <input type="text" name="city" placeholder="Kota">
         <button type="submit">Submit</button>
     </form>
 </body>
